@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto: Pila Casera Cobre - Zinc</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            /* Fondo degradado suave de Lila a Verde Menta */
+            background: linear-gradient(135deg, #f3e5f5 0%, #e8f5e9 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        .title-container {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            /* Color Morado Oscuro */
+            color: #6A1B9A; 
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            /* Borde inferior Verde Vibrante */
+            border-bottom: 3px solid #00C853; 
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        h2 {
+            /* Color Morado medio */
+            color: #4A148C; 
+            /* Barra lateral Verde */
+            border-left: 5px solid #00C853; 
+            padding-left: 15px;
+        }
+        .section {
+            margin-top: 35px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .integrantes-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            font-weight: normal;
+            font-size: 1.1em;
+            color: #333;
+            margin-left: 5px;
+        }
+        .integrantes-list li {
+            margin-bottom: 5px;
+        }
+        .project-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+        }
+        .qr-box {
+            /* Borde punteado Morado */
+            border: 2px dashed #6A1B9A; 
+            padding: 30px;
+            text-align: center;
+            margin-top: 40px;
+            border-radius: 10px;
+            color: #555;
+            /* Fondo muy suave verdoso para resaltar */
+            background-color: #F1F8E9; 
+        }
+        .qr-link img {
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .qr-link img:hover {
+            transform: scale(1.05);
+            /* Sombra verde brillante */
+            box-shadow: 0 0 15px rgba(0, 200, 83, 0.5); 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="title-container">
+            <h1>Proyecto: Pila Casera Cobre - Zinc</h1>
+        </div>
+
+        <div class="section">
+            <h2>Integrantes</h2>
+            <ul class="integrantes-list">
+                <li>Albeiro Montalvo</li>
+                <li>Jeyro Paz</li>
+                <li>Nicolás Chuquiruna</li>
+                <li>Arian Salinas</li>
+                <li>Mateo Quispe</li>
+                <li>Edwin Chávez</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Problema y Objetivo</h2>
+            <p>
+                <b>Problema:</b> <br>
+                En la actualidad, la mayoría de las fuentes de energía eléctrica dependen de procesos costosos o contaminantes. Muchas personas no saben que es posible hacer electricidad mediante reacciones químicas simples. Surge la pregunta: ¿Puede una pila casera hecha con cobre, zinc y vinagre producir energía de forma segura y ecológica?
+                <br><br>
+                <b>Objetivo:</b> <br>
+                Demostrar mediante un experimento cómo una pila casera de cobre y zinc puede generar electricidad y analizar si el número de celdas y del tipo de electrolito influye en el voltaje obtenido.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Marco Teórico</h2>
+            <p>Este proyecto se basa en la creación de una celda galvánica simple.</p>
+            
+            <h3>¿Qué estamos demostrando?</h3>
+            <p>Demostramos el proceso de <strong>oxidación-reducción (Redox)</strong>. Al colocar dos metales diferentes en un electrolito (vinagre), se genera un flujo de electrones.</p>
+            
+            <h3>Fundamento Científico</h3>
+            <p>
+            El <strong>Zinc</strong> actúa como el ánodo (se oxida y pierde electrones) y el <strong>Cobre</strong> actúa como el cátodo (se reduce y gana electrones). Esta transferencia crea la corriente eléctrica. También aplicamos la <strong>Ley de Ohm</strong> para entender la relación entre voltaje, corriente y resistencia al conectar las celdas en serie.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Materiales usados</h2>
+            <ul>
+                <li>1 Lt. Vinagre Blanco (Electrolito)</li>
+                <li>Metal Zincado (Tornillos o láminas)</li>
+                <li>Cable de cobre pelado (grueso y delgado)</li>
+                <li>Cubitera de hielo (Soporte de celdas)</li>
+                <li>Multímetro (Para medir voltaje)</li>
+                <li>Mini Pinzas Cocodrilo</li>
+                <li>Un LED (Para prueba de carga)</li>
+            </ul>
+            
+            <figure>
+                <img class="project-image" src="materiales.png" alt="Materiales del proyecto">
+                <figcaption style="text-align: center; color: #777; font-size: 0.9em;">Mesa de trabajo con los materiales listos.</figcaption>
+            </figure>
+        </div>
+
+        <div class="section">
+            <h2>Procedimiento: ¿Cómo lo hicimos?</h2>
+            <ol>
+                <li>Preparamos los materiales: pelamos el cable de cobre y cortamos el metal zincado.</li>
+                <li>Construimos los electrodos: unimos un trozo de cobre con uno de zinc usando un cable puente.</li>
+                <li>Colocamos los pares de metales en la cubitera: Un extremo de cobre en un hueco y el extremo de zinc en el hueco siguiente (conexión en serie).</li>
+                <li>Añadimos el electrolito: Vertemos vinagre blanco con un poco de sal en cada hueco, asegurándonos de cubrir los metales sin que se toquen entre sí.</li>
+                <li>Medición: Usamos el multímetro para medir el voltaje total sumado de las celdas.</li>
+                <li>Prueba final: Conectamos un LED para verificar si la corriente es suficiente para encenderlo.</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>Resultados</h2>
+            <p>
+             La pila casera funcionó correctamente. Observamos que:
+            </p>
+            <ul>
+                <li><strong>El electrolito importa:</strong> El vinagre con sal produjo más voltaje que otros líquidos probados.</li>
+                <li><strong>Voltaje obtenido:</strong> Cada celda individual generó aproximadamente 0.92V.</li>
+                <li><strong>Conexión en serie:</strong> Al sumar las celdas en la cubitera, el voltaje aumentó lo suficiente para encender el LED, confirmando la hipótesis.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Conclusiones</h2>
+            <p>
+                - Se demostró que es posible generar energía eléctrica limpia con materiales caseros.<br>
+                - La conexión en serie es vital para sumar los voltajes individuales de cada celda.<br>
+                - La reacción química convierte energía química en eléctrica, respetando la ley de conservación de la energía.
+            </p>
+        </div>
+
+        <div class="qr-box">
+            <a href="https://drive.google.com/drive/folders/1D6npxAlHV8ilNXJxEVO-5hFOyxW5ht5y?usp=drive_link" target="_blank" class="qr-link" title="Clic para ir a la carpeta de Drive">
+                <img src="mi-qr.png" alt="Código QR" style="max-width: 300px; width: 100%; height: auto;">
+            </a>
+            <p style="font-size: 1.2em; margin-top: 10px;">Escanea o haz clic en el código para ver el video del experimento</p>
+        </div>
+    </div>
+</body>
+</html>
